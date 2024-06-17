@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "vite",
+    "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
     "build-server": "tsc --project src/server/tsconfig.json && tsc-alias --project src/server/tsconfig.json",
-		"build-client": "tsc --project src/client/tsconfig.json && tsc-alias --project src/client/tsconfig.json",
-		"build-both" : "npm run build-server && npm run build-client"
+    "build-client": "tsc --project src/client/tsconfig.json && tsc-alias --project src/client/tsconfig.json",
+    "build-both": "npm run build-server && npm run build-client"
   },
   "author": "",
   "license": "ISC",
@@ -21,5 +21,8 @@
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.4.5",
     "vite": "^5.3.1"
+  },
+  "dependencies": {
+    "three": "^0.165.0"
   }
 }
