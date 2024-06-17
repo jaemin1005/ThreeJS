@@ -1,0 +1,25 @@
+{
+  "name": "threejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "build-server": "tsc --project src/server/tsconfig.json && tsc-alias --project src/server/tsconfig.json",
+		"build-client": "tsc --project src/client/tsconfig.json && tsc-alias --project src/client/tsconfig.json",
+		"build-both" : "npm run build-server && npm run build-client"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "@types/three": "^0.165.0",
+    "tsc-alias": "^1.8.10",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.3.1"
+  }
+}
