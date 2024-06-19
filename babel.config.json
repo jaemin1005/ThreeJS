@@ -8,6 +8,20 @@
     "@babel/preset-typescript"
   ],
   "plugins": [
-    "@babel/plugin-transform-runtime"
+    ["@babel/plugin-transform-runtime", {
+      "corejs": 3,
+      "helpers": true,
+      "regenerator": true
+    }]
   ]
 }
+
+// {
+//   "presets": [
+//     ["@babel/preset-env", {
+//       "useBuiltIns": "usage", // 필요한 폴리필만 추가하는 설정
+//       "corejs": 3 // core-js의 메이저 버전을 명시
+//     }],
+//     "@babel/preset-typescript"
+//   ]
+// }
